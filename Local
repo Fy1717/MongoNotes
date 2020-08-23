@@ -1,0 +1,33 @@
+Ubuntu Mongo Kurulumu (LOCAL)
+-----------------------------
+1. sudo apt-get install mongodb
+2. sudo apt-get update
+
+MongoDB Servisini Ayağa Kaldırmak
+----------------------------------
+3. sudo service mongodb start
+4. mongo
+
+Var Olan Databaseleri Görmek
+-----------------------------
+5. > show dbs;
+
+Database Seçmek yada Oluşturmak
+-------------------------------
+6. > use newDatabase;
+
+Hangi Database de Olduğumuzu Görmek
+-----------------------------------
+7. > db;
+
+Database de Sütun a Eleman Eklemek
+----------------------------------
+8. > db.users.insert({ "1" : "Furkan Yıldız"});
+
+Database de Sütunları Listelemek
+---------------------------------
+9. > show collections;
+
+Sütundaki Elemanları Listelemek
+--------------------------------
+10. > db.users.find();
